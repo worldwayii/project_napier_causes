@@ -157,6 +157,7 @@ namespace napier_cause.Controllers
                     Email = model.Email,
                     LastName = model.LastName,
                     FirstName = model.FirstName
+
                 };
 
                 var result = await UserManager.CreateAsync(user, model.Password);
