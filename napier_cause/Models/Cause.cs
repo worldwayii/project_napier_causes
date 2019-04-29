@@ -13,12 +13,14 @@ namespace napier_cause.Models
 
         public string Topic { get; set; }
 
-        public string Img_Path { get; set; }
+        public string ImgPath { get; set; }
 
-        public int Created_By { get; set; }
+        public int CreatedBy { get; set; }
 
-        public DateTime? Created_Date { get; set; }
+        public DateTime CreatedDate { get; set; }
 
         public Signature SignatureModel { get; set; }
+
+        public virtual ICollection<Signature> Signatures { get; set; }
     }
 }

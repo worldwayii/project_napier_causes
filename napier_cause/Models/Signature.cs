@@ -7,10 +7,15 @@ namespace napier_cause.Models
 {
     public class Signature
     {
-        public int Cause_id { get; set; }
+        public int ID { get; set; }
+        public int CauseID { get; set; }
 
-        public int User_id { get; set; }
+        public int UserID { get; set; }
 
         public DateTime Signed_Date { get; set; }
+
+        public virtual Cause Cause { get; set; }
+        public virtual ApplicationUser User { get; set; }
+        
     }
 }
